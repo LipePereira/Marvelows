@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewFavorited"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/favorited"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginLeft="@dimen/medium_spacing"
+
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+
+            android:paddingLeft="@dimen/small_spacing"
+            android:paddingRight="@dimen/small_spacing"
+
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+
+            app:layout_constraintTop_toBottomOf="@id/textViewFavorited"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:text="@string/comic__title"
+
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+            />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/tv1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/extra_small_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+
+            android:text="Title"
+
+            />
+
+        <TextView
+            android:id="@+id/tv2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+
+            app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:text="@string/comic__description"
+
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+            />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/tv2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/extra_small_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+
+            android:text="Description"
+
+            />
+
+        <TextView
+            android:id="@+id/tv3"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescription"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:text="@string/comic__date"
+
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+            />
+
+        <TextView
+            android:id="@+id/textViewDate"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/tv3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/extra_small_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+
+            android:text="Date"
+
+            />
+
+        <TextView
+            android:id="@+id/tv4"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+
+            app:layout_constraintTop_toBottomOf="@+id/textViewDate"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:text="@string/comic__price"
+
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+            />
+
+        <TextView
+            android:id="@+id/textViewPrice"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/tv4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/extra_small_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+
+            android:text="Price"
+
+            />
+
+        <TextView
+        android:id="@+id/tv5"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:text="@string/comic__characters"
+
+        android:layout_marginTop="@dimen/medium_spacing"
+        android:layout_marginLeft="@dimen/medium_spacing"
+        android:layout_marginRight="@dimen/medium_spacing"
+        />
+
+        <LinearLayout
+            android:id="@+id/characterList"
+
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/tv5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/extra_small_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+
+            />
+
+        <TextView
+            android:id="@+id/tv6"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+
+            app:layout_constraintTop_toBottomOf="@+id/characterList"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:text="@string/comic__creators"
+
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+            />
+
+        <LinearLayout
+            android:id="@+id/creatorsList"
+
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/tv6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/extra_small_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="public_key">cdd9898bb22e4e514bdf1e8752fe134e</string>
+    <string name="private_key">ddab3b696dcf4290b689f22afb7b9432aefe3eef</string>
+
+    <string name="app_name">Mervelows</string>
+    <string name="title_home">All Comics</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_about">About</string>
+
+    <string name="marvel_api_url">http://gateway.marvel.com/v1/public/</string>
+    <string name="marvel_api_url__format">%s?ts=%s&amp;apikey=%s&amp;hash=%s&amp;%s</string>
+
+    <string name="api_resource__comics">comics</string>
+    <string name="network_error">We couldn\'t get the comics list! Check your connection and try again.</string>
+    <string name="try_again">Retry</string>
+    <string name="loading_comics">Loading comics, please wait...</string>
+    <string name="launch_date">Launch Date:</string>
+    <string name="title_activity_detail">Comic Details</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="set_as_favorite">Saved as favorite!</string>
+    <string name="undo">Undo</string>
+    <string name="unset_as_favorite">Removed from favorites.</string>
+    <string name="comic__title">Comic Title</string>
+    <string name="comic__description">Issue Description</string>
+    <string name="comic__date">On Sale Date</string>
+    <string name="comic__price">Print Price</string>
+    <string name="comic__characters">Characters</string>
+    <string name="comic__creators">Creators</string>
+    <string name="favorited">This title is one of your favorites!</string>
+    <string name="orderBy">Order by...</string>
+    <string name="search_terms">Search Comics</string>
+
+    <string-array name="orderOptions">
+        <item>Order By Name</item>
+        <item>Order By Date</item>
+    </string-array>
+
+</resources>

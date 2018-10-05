@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <Spinner
+        android:id="@+id/spinnerOrder"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:layout_margin="@dimen/medium_spacing"
+
+        android:entries="@array/orderOptions"
+        android:prompt="@string/orderBy"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/spinnerOrder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:layout_marginTop="@dimen/small_spacing"
+        android:layout_marginLeft="@dimen/medium_spacing"
+        android:layout_marginRight="@dimen/medium_spacing"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textViewSearch"
+
+            android:hint="@string/search_terms"
+
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:name="com.lipedev.mervelows.fragments.ComicsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/small_spacing"
+        android:layout_marginRight="@dimen/small_spacing"
+        android:layout_marginTop="@dimen/small_spacing"
+        android:layout_marginBottom="@dimen/medium_spacing"
+
+        app:layout_constraintTop_toBottomOf="@id/til1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        tools:context=".fragments.AllComicsFragment"
+        tools:listitem="@layout/listitem_comic" />
+
+    <ProgressBar
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:id="@+id/progress"
+
+        android:visibility="gone"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>
