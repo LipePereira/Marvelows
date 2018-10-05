@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.lipedev.mervelows.R;
 import com.lipedev.mervelows.activities.DetailActivity;
+import com.lipedev.mervelows.fragments.AboutFragment;
 import com.lipedev.mervelows.fragments.AllComicsFragment;
 import com.lipedev.mervelows.fragments.FavoriteComicsFragment;
 import com.lipedev.mervelows.models.Comic;
@@ -69,7 +70,11 @@ public class MainActivity extends AppCompatActivity implements
      * Replaces the current fragment to the AboutFragment if needed.
      */
     private void switchToAbout() {
+        AboutFragment aboutFragment = AboutFragment.newInstance();
 
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragmentHolder, aboutFragment);
+        transaction.commit();
     }
 
     @Override
@@ -79,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements
 
         fragmentHolder = findViewById(R.id.fragmentHolder);
 
-        navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         navigation.setSelectedItemId(R.id.navigation_home);

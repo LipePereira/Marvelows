@@ -13,7 +13,7 @@
     <string name="api_resource__comics">comics</string>
     <string name="network_error">We couldn\'t get the comics list! Check your connection and try again.</string>
     <string name="try_again">Retry</string>
-    <string name="loading_comics">Loading comics, please wait...</string>
+    <string name="loading_comics">Loading comics, please wait…</string>
     <string name="launch_date">Launch Date:</string>
     <string name="title_activity_detail">Comic Details</string>
 
@@ -28,12 +28,23 @@
     <string name="comic__characters">Characters</string>
     <string name="comic__creators">Creators</string>
     <string name="favorited">This title is one of your favorites!</string>
-    <string name="orderBy">Order by...</string>
+    <string name="orderBy">Order by…</string>
     <string name="search_terms">Search Comics</string>
 
     <string-array name="orderOptions">
         <item>Order By Name</item>
         <item>Order By Date</item>
     </string-array>
+
+    <string name="about__title">The Marvelows App</string>
+    <string name="about__description">A simple Android app that retrieves data from the Marvel API and does some database operations!</string>
+    <string name="about__credits">Developed By</string>
+    <string name="about__name">Felipe \"Lipe\" Pereira</string>
+    <string name="about__email">lipe@lipedev.com</string>
+    <string name="about__github">github.com/LipePereira</string>
+    <string name="about__linkedin">linkedin.com/in/felipeicp</string>
+    <string name="about__website">lipedev.com</string>
+    <string name="about__marvel">Data provided by Marvel. © 2018 MARVEL</string>
+    <string name="about__marvel_url">marvel.com</string>
 
 </resources>
