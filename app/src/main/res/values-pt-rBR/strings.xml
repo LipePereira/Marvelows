@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mervelows</string>
+    <string name="public_key">cdd9898bb22e4e514bdf1e8752fe134e</string>
+    <string name="private_key">ddab3b696dcf4290b689f22afb7b9432aefe3eef</string>
+    <string name="title_home">Todos Quadrinhos</string>
+    <string name="title_favorites">Favoritos</string>
+    <string name="title_about">Sobre</string>
+    <string name="marvel_api_url">http://gateway.marvel.com/v1/public/</string>
+    <string name="marvel_api_url__format">%s?ts=%s&amp;apikey=%s&amp;hash=%s&amp;%s</string>
+    <string name="api_resource__comics">Quadrinhos</string>
+    <string name="network_error">Não foi possível carregar os quadrinhos! Cheque sua conexão e tente novamente.</string>
+    <string name="try_again">Tentar Novamente</string>
+    <string name="loading_comics">Carregando quadrinhos, por favor aguarde…</string>
+    <string name="launch_date">Data de Lançamento</string>
+    <string name="title_activity_detail">Detalhes do Quadrinho</string>
+    <string name="action_settings">Configurações</string>
+    <string name="set_as_favorite">Salvo nos favoritos!</string>
+    <string name="undo">Desfazer</string>
+    <string name="unset_as_favorite">Removido dos favoritos.</string>
+    <string name="comic__title">Título do Quadrinho</string>
+    <string name="comic__description">Descrição da Edição</string>
+    <string name="comic__date">Início das Vendas</string>
+    <string name="comic__price">Preço</string>
+    <string name="comic__characters">Personagens</string>
+    <string name="comic__creators">Criadores</string>
+    <string name="favorited">Esse título está nos seus favoritos!</string>
+    <string name="orderBy">Ordenar por…</string>
+    <string name="search_terms">Buscar Quadrinhos</string>
+    <string name="about__title">O App Marvelows</string>
+    <string name="about__description">Um App Android que lê dados da API da Marvel e faz algumas operações com banco de dados!</string>
+    <string name="about__credits">Desenvolvido Por</string>
+    <string name="about__name">Felipe \"Lipe\" Pereira</string>
+    <string name="about__email">lipe@lipedev.com</string>
+    <string name="about__github">github.com/LipePereira</string>
+    <string name="about__linkedin">linkedin.com/in/felipeicp</string>
+    <string name="about__website">lipedev.com</string>
+    <string name="about__marvel">Dados providos por Marvel © 2018 MARVEL</string>
+    <string name="about__marvel_url">marvel.com</string>
+</resources>
